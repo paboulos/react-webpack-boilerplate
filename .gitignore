@@ -1,6 +1,7 @@
 # node
-nodemodules/
+node_modules/
 
 # project
 dist/
-node_modules
+yarn-error.log
+yarn.lock
