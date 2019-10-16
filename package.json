@@ -1,0 +1,33 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "React client and server unified webpack configuration",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn run build-server && yarn run build-client",
+    "build-server": "babel src/server --out-dir ./dist",
+    "build-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "start": "node ./dist/index.js",
+    "test": "jest ./src"
+  },
+  "keywords": [
+    "Node",
+    "React",
+    "webpack",
+    "Jest"
+  ],
+  "author": "Paul B.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "jest": "^24.9.0",
+    "regenerator-runtime": "^0.13.3"
+  }
+}

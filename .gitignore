@@ -1,0 +1,6 @@
+# node
+nodemodules/
+
+# project
+dist/
+node_modules
