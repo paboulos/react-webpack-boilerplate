@@ -5,8 +5,7 @@
 # Summary of how it was created follows.
 
 ## yarn PnP
-Added to package pnp: true
--  Also option for create-react-app --use-pnp
+Added to package pnp: true. Similar to create-react-app --use-pnp
 
 ## Webpack was setup via wizard 
 - Note: (don't overwrite package.json if you want to preserve previous changes. 
