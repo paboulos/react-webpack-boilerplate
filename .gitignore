@@ -5,3 +5,5 @@ node_modules/
 dist/
 yarn-error.log
 yarn.lock
+__snapshots__/
+.vscode/

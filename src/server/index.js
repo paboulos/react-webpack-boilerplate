@@ -1,4 +1,6 @@
+import '@babel/polyfill';
 import WebServer from './web.server';
+
 
 const { log, error } = console;
 let webserver = new WebServer(3000);
