@@ -7,7 +7,7 @@
 Added to package pnp: true
 -  Also option for create-react-app --use-pnp
 
-## Webpack setup wizzard 
+## Webpack setup wizard 
 - Note: From wizard don't overwrite package.json if you want to preserve 
   previous changes.  node_modules\.bin\webpack --help
   1. yarn add rimraf webpack-node-externals webpack webpack-cli @webpack-cli/init --dev
