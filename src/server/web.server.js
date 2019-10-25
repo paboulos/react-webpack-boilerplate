@@ -13,6 +13,9 @@ export default class WebServer {
     // this.app.use('/static', express.static(path.join(__dirname, 'public')));
     this.app.use(express.static('dist/public'));
   }
+  
+  get Port(){ return this.port }
+
   start(){
     return new Promise((res,rej) => {
       try {
