@@ -17,9 +17,9 @@ Added to package pnp: true
 
 ## Boilerplate Install
 - yarn install
-  yarn run build
-  yarn run start
-  yarn run clean
+- yarn run build
+- yarn run start
+- yarn run clean
 
 ## enzyme
 - yarn add enzyme enzyme-adapter-react-16 --dev
@@ -33,22 +33,21 @@ Open chrome://inspect in a Chromium-based browser
 
 ## Flow Dependencies
 - yarn global add flow-typed 
-  yarn add flow-bin --dev
-  yarn add @babel/preset-flow --dev
-  - The flow-typed install command reads your project’s package.json file, queries the flow-typed 
-    repository for libdefs matching your dependencies, and installs the correctly-versioned libdefs 
-    into the flow-typed/ directory for you. By default, Flow knows to look in the flow-typed/ 
-    directory for libdefs — so there is no additional configuration necessary.
+- yarn add flow-bin --dev
+- yarn add @babel/preset-flow --dev
+- The flow-typed install command reads your project’s package.json file, queries the flow-typed 
+  repository for libdefs matching your dependencies, and installs the correctly-versioned libdefs 
+  into the flow-typed/ directory for you. By default, Flow knows to look in the flow-typed/ 
+  directory for libdefs — so there is no additional configuration necessary.
     
 ## eslint Dependencies
 - yarn add eslint --dev
-  yarn add babel-eslint --dev
-  yarn add eslint-plugin-flowtype --dev
-  yarn add eslint-import-resolver-webpack --dev
-  yarn add eslint-import-resolver-babel-module --dev
-  yarn add eslint-plugin-import --dev
+- yarn add babel-eslint --dev
+- yarn add eslint-plugin-flowtype --dev
+- yarn add eslint-import-resolver-webpack --dev
+- yarn add eslint-import-resolver-babel-module --dev
+- yarn add eslint-plugin-import --dev
 
 ## Async/Await dependencies
 - yarn add @babel/polyfill
-  yarn add @babel/plugin-transform-regenerator --dev
-
+- yarn add @babel/plugin-transform-regenerator --dev
