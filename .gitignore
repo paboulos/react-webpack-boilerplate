@@ -4,6 +4,5 @@ node_modules/
 # project
 dist/
 yarn-error.log
-yarn.lock
 __snapshots__/
 .vscode/
