@@ -3,6 +3,7 @@
 [include]
 
 [libs]
+./flow-typed/
 ./src/type-declarations/
 [lints]
 
@@ -10,4 +11,5 @@
 suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
 suppress_type=$FlowFixMe
 module.name_mapper='^tComponent' -> './src/type-declarations/client/tComponent.js'
+module.name_mapper='^tObject' -> './src/type-declarations/client/tObject.js'
 [strict]

@@ -1,7 +1,9 @@
 # A React boilerplate with unified webpack config for client and server modules
 
 - The path that you provide to the express.static function is relative to the 
-  directory from where you launch your node process. 
+  directory from where you launch your node process.
+- Use 'yarn run start' nodemon will monitor source folder and rebuild automatically 
+
 # Summary of how it was created follows.
 
 ## yarn PnP
@@ -20,6 +22,10 @@ Added to package pnp: true. Similar to create-react-app --use-pnp
 - yarn run start
 - yarn run clean
 
+## Unit Testing
+- flow-typed install jest enzyme
+- Tests are transpiled with flow-remove-type
+- Tests are executed from the temp directory
 ## enzyme
 - yarn add enzyme enzyme-adapter-react-16 --dev
 
@@ -50,3 +56,6 @@ Open chrome://inspect in a Chromium-based browser
 ## Async/Await dependencies
 - yarn add @babel/polyfill
 - yarn add @babel/plugin-transform-regenerator --dev
+
+## dev monitoring
+- create a node script that runs the webpack compiler and run it from nodemon  

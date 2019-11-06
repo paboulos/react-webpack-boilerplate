@@ -121,7 +121,7 @@ const client = {
  */
 module.exports = function(env, argv) {
 	argv.mode ? console.log(`argv mode ${argv.mode}`) : console.log('argv mode null');
-	if (env.production) {
+	if (env && env.production) {
 		console.log('optimize client for production build');
 		client.optimization = {
           minimizer: [new TerserPlugin({ /* additional options here */ })],
@@ -131,7 +131,7 @@ module.exports = function(env, argv) {
 	server.mode = argv.mode;
 	client.mode = argv.mode;
 	
-	if (env.NODE_ENV === 'debug') {
+	if (env && env.NODE_ENV === 'debug') {
 		server.devtool = 'source-map';
 		client.devtool = 'source-map';
 	}

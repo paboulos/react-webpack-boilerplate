@@ -8,10 +8,10 @@
     "build.babel": "yarn run build-server && yarn run build-client",
     "build-server": "babel src/server --out-dir ./dist",
     "build-client": "babel src/client --copy-files --out-dir ./dist/public",
-    "start": "export NODE_ENV=development|| set NODE_ENV=development&& node ./dist/server.js",
-    "test": "jest ./src",
+    "start": "rimraf dist && export NODE_ENV=development|| set NODE_ENV=development&& nodemon -w ./src ./scripts/start.js",
+    "test": "rimraf temp && flow-remove-types --pretty  src/ -d temp/ && jest ./temp",
     "debug": "yarn run clean && webpack --env.NODE_ENV=debug --mode production && node --inspect-brk ./dist/server.js",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist temp"
   },
   "keywords": [
     "Node",
@@ -48,6 +48,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-react": "^7.16.0",
     "flow-bin": "^0.110.1",
+    "flow-remove-types": "^2.110.1",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "react-test-renderer": "^16.10.2",
