@@ -49,7 +49,7 @@
     "eslint-plugin-react": "^7.17.0",
     "flow-bin": "^0.113.0",
     "flow-remove-types": "^2.113.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "jest": "^24.9.0",
     "react-test-renderer": "^16.12.0",
     "regenerator-runtime": "^0.13.3",
@@ -57,7 +57,7 @@
     "style-loader": "^1.0.1",
     "terser-webpack-plugin": "^2.2.2",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
+    "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^1.7.2"
   },
   "installConfig": {
